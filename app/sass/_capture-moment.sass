@@ -1,0 +1,57 @@
+.capture-moment-section
+  position: relative
+  width: 100%
+  height: 550px
+  background: url("../img/every-moment-img.jpg") no-repeat
+  background-size: cover
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: linear-gradient(90deg, $GrayishBlue 45%, transparent 0)
+    opacity: 0.8
+
+  .container
+    position: relative
+    height: 100%
+
+  .left-block
+    width: 350px
+    height: 100%
+    margin: 0 auto 0 0
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+
+  .titel
+    color: $White
+    font: 400 22px/50px $Arvo
+  .small-text
+    color: $White
+
+  ul
+    width: 100%
+    margin-top: 40px
+    display: flex
+    justify-content: space-between
+
+  li
+    width: 150px
+    height: 150px
+    border: 1px solid $White
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .name
+      margin-bottom: 5px
+      color: $White
+      font: 300 22px/25px $OpenSans
+    .number
+      color: $White
+      font: 400 23px/25px $OpenSans
